@@ -63,18 +63,39 @@
       <h1>Testimonials</h1>
       <h2>This is what the people that have worked with me have to say</h2>
       <section class="hero-card-carousel">
-        <section class="hero-card--testimonial">
-          <img src="./static/images/user.png" alt="" class="testimonial-img">
-          <p class="testimonial-comment">Test comment</p>
-          <p class="testimonial-usrname">Testimonial author</p>
-          <p class="testimonial-usrposition">Position, enterprise</p>
-        </section>
+        <div class="carousel">
+          <section class="hero-card--testimonial">
+            <img src="./static/images/user.png" alt="" class="testimonial-img">
+            <p class="testimonial-comment">Test comment 1</p>
+            <p class="testimonial-usrname">Testimonial author</p>
+            <p class="testimonial-usrposition">Position, enterprise</p>
+          </section>
+          <section class="hero-card--testimonial">
+            <img src="./static/images/user.png" alt="" class="testimonial-img">
+            <p class="testimonial-comment">Test comment 2</p>
+            <p class="testimonial-usrname">Testimonial author</p>
+            <p class="testimonial-usrposition">Position, enterprise</p>
+          </section>
+          <section class="hero-card--testimonial">
+            <img src="./static/images/user.png" alt="" class="testimonial-img">
+            <p class="testimonial-comment">Test comment 3</p>
+            <p class="testimonial-usrname">Testimonial author</p>
+            <p class="testimonial-usrposition">Position, enterprise</p>
+          </section>
+          <section class="hero-card--testimonial">
+            <img src="./static/images/user.png" alt="" class="testimonial-img">
+            <p class="testimonial-comment">Test comment 4</p>
+            <p class="testimonial-usrname">Testimonial author</p>
+            <p class="testimonial-usrposition">Position, enterprise</p>
+          </section>
+        </div>
         <section class="hero-card-carousel--controllers">
-          <button class="prev-btn"><img src="./static/images/back.png" alt=""></button>
-          <button class="next-btn"><img src="./static/images/back.png" alt=""></button>
+          <button class="prev-btn" onclick="goToPrevious()"><img src="./static/images/back.png" alt=""></button>
+          <button class="next-btn" onclick="goToNext()"><img src="./static/images/back.png" alt=""></button>
         </section>
       </section>
     </section>
   </section>
+  <script src="./static/js/carousel.js"></script>
 </body>
 </html>
