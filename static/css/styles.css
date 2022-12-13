@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 :root {
     --page-background: #222222;
     /* --strong-highlight: #539BDF; */
@@ -13,7 +14,7 @@
 }
 
 html {
-    background-color: var(--page-background);
+    background-color: var(--page-background) !important;
     font-size: var(--general-font-size);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
@@ -51,7 +52,7 @@ body {
 }
 .hero-card {
     width: 27%;
-    height: 500px;
+    height: 600px;
     background-color: var(--hero-items-bg);
     border-radius: 8px;
     padding: 1em;
@@ -70,10 +71,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    border-radius: 16px;
 }
 .carousel{
     width: 100%;
+    height: 750px;
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -84,7 +86,12 @@ body {
   
 .hero-card--testimonial {
     width: 100%;
+    height: 100%;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0.5em;
     background-color: var(--hero-items-bg);
 }
@@ -103,11 +110,16 @@ body {
 .hero-card--testimonial > p{
     text-align: center;
 }
+.testimonial-comment {
+    font-size: 1.5em;
+}
 .testimonial-usrname {
     font-weight: 600;
+    font-size: 2em;
     text-transform: capitalize;
 }
 .testimonial-usrposition {
+    font-size: 1.5em;
 }
 .prev-btn,
 .next-btn{
@@ -144,7 +156,7 @@ body {
     margin-block: 0.5em;
 }
 .hero > p{
-    font-size: 1.25em;
+    font-size: 1.75em;
     color: white;
     margin-block: 2em;
 }
@@ -176,6 +188,9 @@ body {
 .hero-card > h1,
 .hero-card > p{
     color: black;
+}
+.title{
+    font-size: 3em !important;
 }
 @media only screen and (max-width:1199px) {
     .hero-card-container {

@@ -9,7 +9,6 @@ function goToNext(){
         if(max_translated > last_translated){
             max_translated=last_translated
         }
-        console.log(last_translated)
         carousel.style.transform = "translateX("+last_translated+"%)";
         carousel_current_item++;
     }else{
