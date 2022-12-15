@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrian Hernandez | Fullstack Software Engineer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/navbar.css">
-    <link rel="stylesheet" href="./static/css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <a href= "/" class="logo">
-      <img src="./static/images/Logo_NoBG_White.png" alt="Brand Logo">
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#one" class="link link-theme link-arrow">HOME</a></li>
-      <li><a href="#two" class="link link-theme link-arrow">PORTFOLIO</a></li>
-      <li><a href="#three" class="link link-theme link-arrow">TESTIMONIALS</a></li>
-      <li><a href="#four" class="link link-theme link-arrow">CONTACT</a></li>
-    </ul>
-  </header>
+{% extends 'base.html' %}
+{% block content %}
   <section class="main-hero">
     <section class="hero" id="intro">
       <h1 class="title">Hello, my name is Adrian</h1>
@@ -61,7 +38,29 @@
     </section>
     <div class="section-separator"></div>
     <section class="hero">
-      <h1 class="title">My recent workw</h1>
+      <h1 class="title">My recent work</h1>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <p>
+              I don't have public projects yet, contact me and let me show you my worth.
+            </p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                Reach me on <a href="https://twitter.com/AdrianH0104" target="_blank">Twitter</a>
+              </span>
+            </p>
+            <p class="card-footer-item">
+              <span>
+                Send me an <a href="mailto:j.adrian.hr.ramirez@gmail.com
+                " target="_blank">Email</a>
+              </span>
+            </p>
+          </footer>
+        </div>
+      </div>
     </section>
     <div class="section-separator"></div>
     <section class="hero">
@@ -102,5 +101,4 @@
     </section>
   </section>
   <script src="./static/js/carousel.js"></script>
-</body>
-</html>
+{% endblock %}

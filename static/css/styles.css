@@ -192,6 +192,18 @@ body {
 .title{
     font-size: 3em !important;
 }
+.card {
+    background-color: var(--hero-items-bg);
+}
+.card-content > * {
+    font-size: 1.25em;
+}
+.content p{
+    text-align: center;
+}
+.card-footer-item >span > a {
+    color: var(--strong-highlight) !important;
+}
 @media only screen and (max-width:1199px) {
     .hero-card-container {
         display: flex;
