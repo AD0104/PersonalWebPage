@@ -12,6 +12,7 @@
     --width-80: 80%;
     --width-30: 25%;
     --general-font-size: 1em;
+    --light-gray: #c2c2c2;
 }
 
 html {
@@ -229,7 +230,7 @@ body {
     width: 100%;
     height: 2px;
     margin-block: 2em;
-    background-color: #c2c2c2;
+    background-color: var(--light-gray);
 }
 
 .section-separator-dark {
@@ -299,12 +300,38 @@ body {
         width: 100%;
     }
 
+    .hero-card {
+        height: auto;
+    }
+
     #testimonial-title {
         font-size: 2.5em !important;
     }
 
     .section-separator { 
-        margin-block: 1em;
+        margin-block: 5em;
+    }
+
+    .section-separator--small {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-block: 2em;
+        background-color: black;
+    }
+
+    .hero-card--image {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hero-card--content {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero-card--content > h1 {
