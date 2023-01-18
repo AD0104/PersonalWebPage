@@ -69,3 +69,34 @@
     color: lightgray;
     font-weight: 300;
 }
+
+@media only screen and (max-width: 1199px) {
+    .footer {
+        max-width: 100%;
+        max-height: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .footer__section {
+        width: 100%;
+        height: auto;
+        margin-block: 1em;
+        position: relative;
+        border-bottom: 1px solid #5BE9B9;
+    }
+
+    .footer__section__title {
+        width: 100%;
+    }
+
+    .footer__section__contact-menu {
+        width: 80%;
+        position: relative;
+        left: 5%;
+    }
+}

@@ -119,7 +119,6 @@
               <p class="hero__carousel-card__card__content__subtitle">Testimonial author</p>
               <p class="hero__carousel-card__card__content__text">Position, enterprise</p>
           </section>
-          
         </div>
         <section class="hero__carousel-card__controllers">
           <button class="prev-btn" onclick="goToPrevious()"><img src="./static/images/back.png" alt=""></button>
@@ -127,91 +126,9 @@
         </section>
       </section>
     </section>
-    <footer class="footer">
-      <section class="footer__section">
-        <h1 class="footer__section__title">I am a Full Stack Software Engineer with <strong class="hero__highlight--green">1+ year of professional Web Development</strong></h1>
-        <p class="footer__section__content">I create successful websites that are <strong class="hero__highlight--green">
-          fast, easy to use, and built with the best practices
-        </strong>.</p>
-      </section>
-      <section class="footer__section">
-        <h1 class="footer__section__title">Contact me on...</h1>
-        <ul class="footer__section__contact-menu">
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href="mailto:adrianhernandez@adrianhernandezr.me" 
-              target="_blank"
-              class="footer__section__contact-menu__item__title">
-              Email 
-              <i class="icon fa-regular fa-envelope"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Main way of comunnication, always checking it</p>
-          </li>
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href="https://github.com/AD0104"
-              target="_blank"
-              class="footer__section__contact-menu__item__title">
-              GitHub 
-              <i class="icon fa-brands fa-github"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Watch my personal projects and collabs</p>
-          </li>
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href="https://www.linkedin.com/in/jose-adrian-hernandez-ramirez-77b04a241/"
-              target="_blank"
-              class="footer__section__contact-menu__item__title">
-              LinkedIn 
-              <i class="icon fa-brands fa-linkedin"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Let's connect</p>
-          </li>
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href="https://twitter.com/AdrianH0104"
-              target="_blank"
-              class="footer__section__contact-menu__item__title">
-              Twitter 
-              <i class="icon fa-brands fa-twitter"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Follow for web design & development articles, opinions, and links</p>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__section">
-        <h1 class="footer__section__title">Watch more about me</h1>
-        <ul class="contact-menu">
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href=""
-              class="footer__section__contact-menu__item__title">
-              Portfolio 
-              <i class="icon fa-solid fa-folder-tree"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Watch my public project with other clients!</p>
-          </li>
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href=""
-              class="footer__section__contact-menu__item__title">
-              Testimonials 
-              <i class="icon fa-regular fa-comment"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Check my quality and performance based on my clients opinions!</p>
-          </li>
-          <li class="footer__section__contact-menu__item">
-            <a 
-              href="" 
-              class="footer__section__contact-menu__item__title">
-              Contact 
-              <i class="icon fa-solid fa-address-card"></i>
-            </a>
-            <p class="footer__section__contact-menu__item__description">Let's schedule a date and talk about how I can help you!</p>
-          </li>
-        </ul>
-      </section>
-    </footer>
   </section>
+  {% endblock %}
+{% block scripts %} 
+{{ super() }}
   <script src="./static/js/carousel.js"></script>
 {% endblock %}

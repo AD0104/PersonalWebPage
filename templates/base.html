@@ -23,6 +23,8 @@
 		{% block body %} {% include 'navbar.html' %} {% block
 		content%}{%endblock%} {% endblock %}
 	</body>
-	<footer>{% block footer %} {% endblock %}</footer>
+	<footer>
+		{% block footer %} {% include 'footer.html' %} {% endblock %}
+	</footer>
 	{% block scripts %}{%endblock%}
 </html>
