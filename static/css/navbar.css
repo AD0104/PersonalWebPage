@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.5em !important;
+  font-size: 1.5em;
   font-family: Montserrat;
   font-weight: 600;
   color: white !important;
@@ -133,7 +133,7 @@ h6 {
 
 .header {
   /* background-color: #fff; */
-  position:sticky;
+  position: sticky;
 
   display: flex;
   justify-content: space-between;
@@ -289,7 +289,7 @@ h6 {
 }
 
 @media only screen and (min-width:250px) {
-  
+
 
   h1 {
     font-size: 30px;
@@ -301,22 +301,26 @@ h6 {
 }
 
 @media only screen and (max-width:874px) {
-  .header{
+  .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .header .logo{
+
+  .header .logo {
     width: 60%;
   }
+
   .header .menu-icon {
     width: 20%;
   }
+
   .nav-menu {
     width: 90%;
-    box-shadow: 0px 5px 4px 1px rgba(255,255,255,0.3);
+    box-shadow: 0px 5px 4px 1px rgba(255, 255, 255, 0.3);
   }
 }
+
 @media only screen and (min-width:768px) {
   .main {
     padding-top: 150px;
@@ -332,27 +336,6 @@ h6 {
 
   h2 {
     font-size: 28px;
-  }
-
-  .footer {
-    padding: 70px 0
-  }
-
-  .footer ul {
-    margin-top: 15px
-  }
-
-  .footer ul li {
-    display: inline-block;
-    margin: 0 0 0 10px
-  }
-
-  .footer .foot-content-left {
-    float: left
-  }
-
-  .footer .foot-content {
-    float: right
   }
 }
 
@@ -386,6 +369,7 @@ h6 {
   }
 
 }
+
 /* 48em = 768px */
 
 @media (min-width: 875px) {

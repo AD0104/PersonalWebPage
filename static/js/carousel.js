@@ -1,5 +1,5 @@
 let carousel = document.querySelector(".carousel");
-let carousel_items = document.getElementsByClassName("hero-card--testimonial");
+let carousel_items = document.getElementsByClassName("hero__carousel-card__card");
 let carousel_current_item = 1;
 let last_translated = 0;
 let max_translated = 0;
