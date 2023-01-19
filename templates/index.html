@@ -1,134 +1,223 @@
-{% extends 'base.html' %}
-{% block content %}
-  <section class="main">
-    <section class="hero" id="intro">
-      <h1 class="hero__title">Hello, my name is Adrian</h1>
-      <p class="hero__content">I'm a freelance <strong class="hero__highlight">Full Stack Software Engineer</strong> ready to help you <strong class="hero__highlight">impress your clients</strong>
-      with a visually stunning website or a customized software solution.</p>
-      <img class="hero__image" src="./static/images/hero-devices.svg" alt="Devices">
-    </section>
-    <div class="section-separator"></div>
-    <section class="hero">
-      <h1 class="hero__title">I can help you with</h1>
-      <section class="hero__card-container">
-        <section class="hero__card-container__card">
-          <div class="hero__card-container__card__image">
-            <img class="hero__card-container__card__image__img" src="./static/images/front-development.png" alt="Frontend Development">
-          </div>
-          <div class="section-separator section-separator--small section-separator--dark"></div>
-          <div class="hero__card-container__card__content">
-            <h1 class="hero__card-container__card__content__title">Front-End Development</h1>
-            <p class="hero__card-container__card__content__content">I'll <strong class="hero__highlight">structure, design and develop</strong> a completely modern and 
-              functional website.</p>
-          </div>
-        </section>
-        <section class="hero__card-container__card">
-          <div class="hero__card-container__card__image">
-            <img class="hero__card-container__card__image__img" src="./static/images/tools.png" alt="SEO Tools">
-          </div>
-          <div class="section-separator section-separator--small section-separator-dark"></div>
-          <div class="hero__card-container__card__content">
-            <h1 class="hero__card-container__card__content__title">Performance, SEO & accessibility testing</h1>
-            <p class="hero__card-container__card__content__content">Already have a website? Great, lets see how 
-              we can <strong class="hero__highlight">upgrade it to help you reach more clients and secure sells</strong>.
-            </p>
-          </div>
-        </section>
-        <section class="hero__card-container__card">
-          <div class="hero__card-container__card__image">
-            <img class="hero__card-container__card__image__img" src="./static/images/app-development.png" alt="App Development">
-          </div>
-          <div class="section-separator section-separator--small section-separator-dark"></div>
-          <div class="hero__card-container__card__content">
-            <h1 class="hero__card-container__card__content__title">Create custom apps</h1>
-            <p class="hero__card-container__card__content__content">If you already have a business 
-              <strong class="hero__highlight">I can help you improve operations</strong>.
-            </p>
-          </div>
-        </section>
-      </section>
-    </section>
-    <div class="section-separator"></div>
-    <section class="hero">
-      <h1 class="hero__title">My recent work</h1>
-      <!-- Bulma Card -->
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <p>
-              I don't have public projects yet, contact me and let me show you my worth.
-            </p>
-          </div>
-          <footer class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                Reach me on <a href="https://twitter.com/AdrianH0104" target="_blank">Twitter</a>
-              </span>
-            </p>
-            <p class="card-footer-item">
-              <span>
-                Send me an <a href="mailto:j.adrian.hr.ramirez@gmail.com
-                " target="_blank">Email</a>
-              </span>
-            </p>
-          </footer>
-        </div>
-      </div>
-      <!-- End Of Bulma Card -->
-    </section>
-    <div class="section-separator"></div>
-    <section class="hero">
-      <h1 class="hero__title" id="testimonial-title">Testimonials</h1>
-      <h2 class="hero__title--medium">This is what the people that have worked with me have to say</h2>
-      <section class="hero__carousel-card">
-        <div class="carousel">
-          <section class="hero__carousel-card__card">
-            <div class="hero__carousel-card__card__image">
-              <img src="./static/images/user.png" alt="" class="hero__carousel-card__card__image__img">
-            </div>
-            <div class="hero__carousel-card__card__content">
-              <p class="hero__carousel-card__card__content__title">Test comment 1</p>
-              <p class="hero__carousel-card__card__content__subtitle">Testimonial author</p>
-              <p class="hero__carousel-card__card__content__text">Position, enterprise</p>
-            </div>
-          </section>
-          <section class="hero__carousel-card__card">
-            <div class="hero__carousel-card__card__image">
-              <img src="./static/images/user.png" alt="" class="hero__carousel-card__card__image__img">
-            </div>
-            <div class="hero__carousel-card__card__content">
-              <p class="hero__carousel-card__card__content__title">Test comment 2</p>
-              <p class="hero__carousel-card__card__content__subtitle">Testimonial author</p>
-              <p class="hero__carousel-card__card__content__text">Position, enterprise</p>
-          </section>
-          <section class="hero__carousel-card__card">
-            <div class="hero__carousel-card__card__image">
-              <img src="./static/images/user.png" alt="" class="hero__carousel-card__card__image__img">
-            </div>
-            <div class="hero__carousel-card__card__content">
-              <p class="hero__carousel-card__card__content__title">Test comment 3</p>
-              <p class="hero__carousel-card__card__content__subtitle">Testimonial author</p>
-              <p class="hero__carousel-card__card__content__text">Position, enterprise</p>
-          </section>
-          <section class="hero__carousel-card__card">
-            <div class="hero__carousel-card__card__image">
-              <img src="./static/images/user.png" alt="" class="hero__carousel-card__card__image__img">
-            </div>
-            <div class="hero__carousel-card__card__content">
-              <p class="hero__carousel-card__card__content__title">Test comment 4</p>
-              <p class="hero__carousel-card__card__content__subtitle">Testimonial author</p>
-              <p class="hero__carousel-card__card__content__text">Position, enterprise</p>
-          </section>
-        </div>
-        <section class="hero__carousel-card__controllers">
-          <button class="prev-btn" onclick="goToPrevious()"><img src="./static/images/back.png" alt=""></button>
-          <button class="next-btn" onclick="goToNext()"><img src="./static/images/back.png" alt=""></button>
-        </section>
-      </section>
-    </section>
-  </section>
-  {% endblock %}
-{% block scripts %} 
-{{ super() }}
-  <script src="./static/js/carousel.js"></script>
+{% extends 'base.html' %} {% block content %}
+<section class="hero" id="intro">
+	<h1 class="hero__title">Hello, my name is Adrian</h1>
+	<p class="hero__content">
+		I'm a freelance
+		<strong class="hero__highlight">Full Stack Software Engineer</strong>
+		ready to help you
+		<strong class="hero__highlight">impress your clients</strong> with a
+		visually stunning website or a customized software solution.
+	</p>
+	<img
+		class="hero__image"
+		src="./static/images/hero-devices.svg"
+		alt="Devices" />
+</section>
+<div class="section-separator"></div>
+<section class="hero">
+	<h1 class="hero__title">I can help you with</h1>
+	<section class="hero__card-container">
+		<section class="hero__card-container__card">
+			<div class="hero__card-container__card__image">
+				<img
+					class="hero__card-container__card__image__img"
+					src="./static/images/front-development.png"
+					alt="Frontend Development" />
+			</div>
+			<div
+				class="section-separator section-separator--small section-separator--dark"></div>
+			<div class="hero__card-container__card__content">
+				<h1 class="hero__card-container__card__content__title">
+					Front-End Development
+				</h1>
+				<p class="hero__card-container__card__content__content">
+					I'll
+					<strong class="hero__highlight"
+						>structure, design and develop</strong
+					>
+					a completely modern and functional website.
+				</p>
+			</div>
+		</section>
+		<section class="hero__card-container__card">
+			<div class="hero__card-container__card__image">
+				<img
+					class="hero__card-container__card__image__img"
+					src="./static/images/tools.png"
+					alt="SEO Tools" />
+			</div>
+			<div
+				class="section-separator section-separator--small section-separator-dark"></div>
+			<div class="hero__card-container__card__content">
+				<h1 class="hero__card-container__card__content__title">
+					Performance, SEO & accessibility testing
+				</h1>
+				<p class="hero__card-container__card__content__content">
+					Already have a website? Great, lets see how we can
+					<strong class="hero__highlight"
+						>upgrade it to help you reach more clients and secure
+						sells</strong
+					>.
+				</p>
+			</div>
+		</section>
+		<section class="hero__card-container__card">
+			<div class="hero__card-container__card__image">
+				<img
+					class="hero__card-container__card__image__img"
+					src="./static/images/app-development.png"
+					alt="App Development" />
+			</div>
+			<div
+				class="section-separator section-separator--small section-separator-dark"></div>
+			<div class="hero__card-container__card__content">
+				<h1 class="hero__card-container__card__content__title">
+					Create custom apps
+				</h1>
+				<p class="hero__card-container__card__content__content">
+					If you already have a business
+					<strong class="hero__highlight"
+						>I can help you improve operations</strong
+					>.
+				</p>
+			</div>
+		</section>
+	</section>
+</section>
+<div class="section-separator"></div>
+<section class="hero">
+	<h1 class="hero__title">My recent work</h1>
+	<!-- Bulma Card -->
+	<div class="card">
+		<div class="card-content">
+			<div class="content">
+				<p>
+					I don't have public projects yet, contact me and let me show
+					you my worth.
+				</p>
+			</div>
+			<footer class="card-footer">
+				<p class="card-footer-item">
+					<span>
+						Reach me on
+						<a
+							href="https://twitter.com/AdrianH0104"
+							target="_blank"
+							>Twitter</a
+						>
+					</span>
+				</p>
+				<p class="card-footer-item">
+					<span>
+						Send me an
+						<a
+							href="mailto:j.adrian.hr.ramirez@gmail.com
+              "
+							target="_blank"
+							>Email</a
+						>
+					</span>
+				</p>
+			</footer>
+		</div>
+	</div>
+	<!-- End Of Bulma Card -->
+</section>
+<div class="section-separator"></div>
+<section class="hero">
+	<h1 class="hero__title" id="testimonial-title">Testimonials</h1>
+	<h2 class="hero__title--medium">
+		This is what the people that have worked with me have to say
+	</h2>
+	<section class="hero__carousel-card">
+		<div class="carousel">
+			<section class="hero__carousel-card__card">
+				<div class="hero__carousel-card__card__image">
+					<img
+						src="./static/images/user.png"
+						alt=""
+						class="hero__carousel-card__card__image__img" />
+				</div>
+				<div class="hero__carousel-card__card__content">
+					<p class="hero__carousel-card__card__content__title">
+						Test comment 1
+					</p>
+					<p class="hero__carousel-card__card__content__subtitle">
+						Testimonial author
+					</p>
+					<p class="hero__carousel-card__card__content__text">
+						Position, enterprise
+					</p>
+				</div>
+			</section>
+			<section class="hero__carousel-card__card">
+				<div class="hero__carousel-card__card__image">
+					<img
+						src="./static/images/user.png"
+						alt=""
+						class="hero__carousel-card__card__image__img" />
+				</div>
+				<div class="hero__carousel-card__card__content">
+					<p class="hero__carousel-card__card__content__title">
+						Test comment 2
+					</p>
+					<p class="hero__carousel-card__card__content__subtitle">
+						Testimonial author
+					</p>
+					<p class="hero__carousel-card__card__content__text">
+						Position, enterprise
+					</p>
+				</div>
+			</section>
+			<section class="hero__carousel-card__card">
+				<div class="hero__carousel-card__card__image">
+					<img
+						src="./static/images/user.png"
+						alt=""
+						class="hero__carousel-card__card__image__img" />
+				</div>
+				<div class="hero__carousel-card__card__content">
+					<p class="hero__carousel-card__card__content__title">
+						Test comment 3
+					</p>
+					<p class="hero__carousel-card__card__content__subtitle">
+						Testimonial author
+					</p>
+					<p class="hero__carousel-card__card__content__text">
+						Position, enterprise
+					</p>
+				</div>
+			</section>
+			<section class="hero__carousel-card__card">
+				<div class="hero__carousel-card__card__image">
+					<img
+						src="./static/images/user.png"
+						alt=""
+						class="hero__carousel-card__card__image__img" />
+				</div>
+				<div class="hero__carousel-card__card__content">
+					<p class="hero__carousel-card__card__content__title">
+						Test comment 4
+					</p>
+					<p class="hero__carousel-card__card__content__subtitle">
+						Testimonial author
+					</p>
+					<p class="hero__carousel-card__card__content__text">
+						Position, enterprise
+					</p>
+				</div>
+			</section>
+		</div>
+		<section class="hero__carousel-card__controllers">
+			<button class="prev-btn" onclick="goToPrevious()">
+				<img src="./static/images/back.png" alt="" />
+			</button>
+			<button class="next-btn" onclick="goToNext()">
+				<img src="./static/images/back.png" alt="" />
+			</button>
+		</section>
+	</section>
+</section>
+{% endblock %} {% block scripts %} {{ super() }}
+<script src="./static/js/carousel.js"></script>
 {% endblock %}

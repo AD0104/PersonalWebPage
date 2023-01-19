@@ -20,8 +20,9 @@
 	</head>
 	{% endblock %} {% block extralinks %}{%endblock%}
 	<body>
-		{% block body %} {% include 'navbar.html' %} {% block
-		content%}{%endblock%} {% endblock %}
+		{% block body %} {% include 'navbar.html' %}
+		<section class="main">{% block content%} {%endblock%}</section>
+		{% endblock %}
 	</body>
 	<footer>
 		{% block footer %} {% include 'footer.html' %} {% endblock %}

@@ -1,1 +1,108 @@
-{% extends 'base.html' %} {% block content %} {% endblock %}
+{% extends 'base.html' %} {% block content %}
+<section class="hero__contact">
+	<section class="hero__contact__section">
+		<h1 class="hero__title--medium">Send me a message!</h1>
+		<form class="hero__form">
+			<div class="field">
+				<label class="label">Name</label>
+				<div class="control has-icons-left">
+					<input
+						class="input"
+						type="text"
+						placeholder="Name input"
+						name="form-name" />
+					<span class="icon is-small is-left">
+						<i class="fa-solid fa-address-card"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Email</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input"
+						type="email"
+						placeholder="Email input"
+						name="form-email" />
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Message</label>
+				<div class="control">
+					<textarea
+						class="textarea"
+						placeholder="Message input"></textarea>
+				</div>
+			</div>
+
+			<div class="field is-grouped">
+				<div class="control">
+					<button class="button is-link">Submit</button>
+				</div>
+				<div class="control">
+					<button class="button is-link is-light">Cancel</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<section class="hero__contact__section">
+		<h1 class="hero__title--medium">Or contact me on my socials!</h1>
+		<ul class="hero__contact__menu">
+			<li class="hero__contact-menu__item">
+				<a
+					href="mailto:adrianhernandez@adrianhernandezr.me"
+					target="_blank"
+					class="hero__contact-menu__item__title">
+					Email
+					<i class="icon fa-regular fa-envelope"></i>
+				</a>
+				<p class="hero__contact-menu__item__description">
+					Main way of comunnication, always checking it
+				</p>
+			</li>
+			<li class="hero__contact-menu__item">
+				<a
+					href="https://github.com/AD0104"
+					target="_blank"
+					class="hero__contact-menu__item__title">
+					GitHub
+					<i class="icon fa-brands fa-github"></i>
+				</a>
+				<p class="hero__contact-menu__item__description">
+					Watch my personal projects and collabs
+				</p>
+			</li>
+			<li class="hero__contact-menu__item">
+				<a
+					href="https://www.linkedin.com/in/jose-adrian-hernandez-ramirez-77b04a241/"
+					target="_blank"
+					class="hero__contact-menu__item__title">
+					LinkedIn
+					<i class="icon fa-brands fa-linkedin"></i>
+				</a>
+				<p class="hero__contact-menu__item__description">
+					Let's connect
+				</p>
+			</li>
+			<li class="hero__contact-menu__item">
+				<a
+					href="https://twitter.com/AdrianH0104"
+					target="_blank"
+					class="hero__contact-menu__item__title">
+					Twitter
+					<i class="icon fa-brands fa-twitter"></i>
+				</a>
+				<p class="hero__contact-menu__item__description">
+					Follow for web design & development articles, opinions, and
+					links
+				</p>
+			</li>
+		</ul>
+	</section>
+</section>
+{% endblock %}
