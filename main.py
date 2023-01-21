@@ -1,6 +1,16 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request, make_response, jsonify
 
 app = Flask(__name__, static_folder="./static/", template_folder="./templates/")
+
+def make_custom_response(status: str, message: str):
+    return make_response(
+            jsonify(
+                {
+                    "message": message,
+                    "status": status
+                }
+            )
+        )
 
 @app.route("/")
 def index():
@@ -18,12 +28,10 @@ def contact():
 
 @app.route("/contact/submit", methods=["POST"])
 def contact_form_submit():
-    form_name = request.form.get("form-name")
-    form_email = request.form.get("form-email")
-    form_message = request.form.get("form-message")
-    print("\n[MENSAJES POST]")
-    print(f"[form_name]: [{form_name}]")
-    print(f"[form_email]: [{form_email}]")
-    print(f"[form_message]: [{form_message}]")
-    return 200
+    form_name = request.form.get("form-name-input")
+    form_email = request.form.get("form-email-input")
+    form_message = request.form.get("form-message-textarea")
+    if(form_name == "" or form_email == "" or form_message == ""):
+        return make_custom_response("400", "There're some empty fields!")
+    return make_custom_response("200","Ok") 
 

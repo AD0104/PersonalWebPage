@@ -2,15 +2,16 @@
 <section class="hero__contact">
 	<section class="hero__contact__section">
 		<h1 class="hero__title--medium">Send me a message!</h1>
-		<form class="hero__form">
+		<form class="hero__form" id="contact-form" name="contact-form">
 			<div class="field">
 				<label class="label">Name</label>
-				<div class="control has-icons-left">
+				<div class="control has-icons-left has-icons-right">
 					<input
 						class="input"
 						type="text"
 						placeholder="Name input"
-						name="form-name" />
+						name="form-name-input"
+						required />
 					<span class="icon is-small is-left">
 						<i class="fa-solid fa-address-card"></i>
 					</span>
@@ -24,7 +25,8 @@
 						class="input"
 						type="email"
 						placeholder="Email input"
-						name="form-email" />
+						name="form-email-input"
+						required />
 					<span class="icon is-small is-left">
 						<i class="fas fa-envelope"></i>
 					</span>
@@ -33,19 +35,25 @@
 
 			<div class="field">
 				<label class="label">Message</label>
-				<div class="control">
+				<div class="control has-icons-right">
 					<textarea
 						class="textarea"
-						placeholder="Message input"></textarea>
+						placeholder="Message input"
+						name="form-message-textarea"
+						required></textarea>
 				</div>
 			</div>
 
 			<div class="field is-grouped">
 				<div class="control">
-					<button class="button is-link">Submit</button>
+					<button class="button is-link" id="submit-btn">
+						Submit
+					</button>
 				</div>
 				<div class="control">
-					<button class="button is-link is-light">Cancel</button>
+					<button class="button is-link is-light" id="cancel-btn">
+						Cancel
+					</button>
 				</div>
 			</div>
 		</form>
@@ -105,4 +113,6 @@
 		</ul>
 	</section>
 </section>
-{% endblock %}
+{% endblock %} {% block scripts %}
+<script src="{{url_for('static', filename='js/contact-form.js') }}"></script>
+{%endblock%}
