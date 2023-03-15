@@ -21,7 +21,10 @@ def make_custom_response(status: str, message: str):
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    context = {
+            "carousel_testimonials_info": ""
+    }
+    return render_template('index.html', **context)
 
 @app.route("/portfolio")
 def portfolio():

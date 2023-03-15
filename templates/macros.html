@@ -1,0 +1,21 @@
+{% macro render_carousel_testimonials(data) %} 
+<section class="hero__carousel-card__card">
+    <div class="hero__carousel-card__card__image">
+        <img
+            src="{{ url_for('static', filename=data['image']) }}"
+            alt="Imagen de perfil de {{data['name']}}"
+            class="hero__carousel-card__card__image__img" />
+    </div>
+    <div class="hero__carousel-card__card__content">
+        <p class="hero__carousel-card__card__content__title">
+            {{ data['comment'] }}
+        </p>
+        <p class="hero__carousel-card__card__content__subtitle">
+            {{ data['author'] }}
+        </p>
+        <p class="hero__carousel-card__card__content__text">
+            {{ data['author_job']}}, {{data['author_enterprise']}}
+        </p>
+    </div>
+</section>
+{% endmacro %}

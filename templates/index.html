@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% block content %}
 <section class="hero" id="intro">
 	<h1 class="hero__title">Hello, my name is Adrian</h1>
 	<p class="hero__content">
@@ -131,82 +133,9 @@
 	</h2>
 	<section class="hero__carousel-card">
 		<div class="carousel">
-			<section class="hero__carousel-card__card">
-				<div class="hero__carousel-card__card__image">
-					<img
-						src="./static/images/user.png"
-						alt=""
-						class="hero__carousel-card__card__image__img" />
-				</div>
-				<div class="hero__carousel-card__card__content">
-					<p class="hero__carousel-card__card__content__title">
-						Test comment 1
-					</p>
-					<p class="hero__carousel-card__card__content__subtitle">
-						Testimonial author
-					</p>
-					<p class="hero__carousel-card__card__content__text">
-						Position, enterprise
-					</p>
-				</div>
-			</section>
-			<section class="hero__carousel-card__card">
-				<div class="hero__carousel-card__card__image">
-					<img
-						src="./static/images/user.png"
-						alt=""
-						class="hero__carousel-card__card__image__img" />
-				</div>
-				<div class="hero__carousel-card__card__content">
-					<p class="hero__carousel-card__card__content__title">
-						Test comment 2
-					</p>
-					<p class="hero__carousel-card__card__content__subtitle">
-						Testimonial author
-					</p>
-					<p class="hero__carousel-card__card__content__text">
-						Position, enterprise
-					</p>
-				</div>
-			</section>
-			<section class="hero__carousel-card__card">
-				<div class="hero__carousel-card__card__image">
-					<img
-						src="./static/images/user.png"
-						alt=""
-						class="hero__carousel-card__card__image__img" />
-				</div>
-				<div class="hero__carousel-card__card__content">
-					<p class="hero__carousel-card__card__content__title">
-						Test comment 3
-					</p>
-					<p class="hero__carousel-card__card__content__subtitle">
-						Testimonial author
-					</p>
-					<p class="hero__carousel-card__card__content__text">
-						Position, enterprise
-					</p>
-				</div>
-			</section>
-			<section class="hero__carousel-card__card">
-				<div class="hero__carousel-card__card__image">
-					<img
-						src="./static/images/user.png"
-						alt=""
-						class="hero__carousel-card__card__image__img" />
-				</div>
-				<div class="hero__carousel-card__card__content">
-					<p class="hero__carousel-card__card__content__title">
-						Test comment 4
-					</p>
-					<p class="hero__carousel-card__card__content__subtitle">
-						Testimonial author
-					</p>
-					<p class="hero__carousel-card__card__content__text">
-						Position, enterprise
-					</p>
-				</div>
-			</section>
+			{% for key, data in carousel_testimonials_info.items() %} 
+				{{ macros render_carousel_testimonials(data) }}
+			{% endfor %}
 		</div>
 		<section class="hero__carousel-card__controllers">
 			<button class="prev-btn" onclick="goToPrevious()">
